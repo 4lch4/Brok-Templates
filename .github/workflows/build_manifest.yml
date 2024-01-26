@@ -19,7 +19,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
 
       - name: Install Dependencies
-        run: bun install
+        run: bun install --cwd /build
 
       - name: Run Manifest Script
-        run: bun run ../../build/manifest.ts
+        run: bun run /build/manifest.ts
