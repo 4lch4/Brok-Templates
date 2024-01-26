@@ -1,4 +1,4 @@
-name: Build the Template Manifest
+name: Update the Template Manifest
 
 on:
   workflow_dispatch: {}
@@ -7,8 +7,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build the Template Manifest
+  update:
+    name: Update the Template Manifest
     runs-on: ubuntu-latest
 
     steps:
