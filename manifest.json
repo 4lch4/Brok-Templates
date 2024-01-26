@@ -1,12 +1,12 @@
 [
   {
-    "id": "bun",
-    "name": "Bun",
-    "description": "Useful for creating a new project that will use the Bun runtime."
-  },
-  {
     "id": "elysia-api",
     "name": "Elysia API",
     "description": "A new API using the Elysia framework and the Bun runtime."
+  },
+  {
+    "id": "/bun",
+    "name": "Bun",
+    "description": "Useful for creating a new project that will use the Bun runtime."
   }
 ]
