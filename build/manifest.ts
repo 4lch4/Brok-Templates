@@ -13,6 +13,8 @@ type Manifest = {
 }
 
 export async function main() {
+  const manifests: Manifest[] = []
+
   try {
     // const manifests = await fs.readdir(join(__dirname, '..'), { recursive: true })
     const manifestFilePaths = await glob('**/template.json', {
@@ -20,8 +22,6 @@ export async function main() {
       absolute: true,
       maxDepth: 2,
     })
-
-    const manifests: Manifest[] = []
 
     for (const filePath of manifestFilePaths) {
       const manifest = await Bun.file(filePath).json()
