@@ -10,6 +10,8 @@ jobs:
   update:
     name: Update the Template Manifest
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
