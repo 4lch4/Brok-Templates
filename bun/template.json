@@ -1,5 +1,5 @@
 {
+  "id": "/bun",
   "name": "Bun",
-  "description": "Useful for creating a new project that will use the Bun runtime.",
-  "path": "/bun"
+  "description": "Useful for creating a new project that will use the Bun runtime."
 }
