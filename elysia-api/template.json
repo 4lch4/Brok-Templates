@@ -1,5 +1,5 @@
 {
-  "id": "elysia",
-  "name": "Elysia",
+  "id": "elysia-api",
+  "name": "Elysia API",
   "description": "A new API using the Elysia framework and the Bun runtime."
 }
