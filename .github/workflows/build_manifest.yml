@@ -23,3 +23,15 @@ jobs:
 
       - name: Run Manifest Script
         run: bun run ./build/manifest.ts
+
+      - name: Commit Manifest
+        run: |
+          # Set a timestamp variable in the format of YYYY-MM-DDTHH-MM-SSZ
+          TIMESTAMP=$(date -u +'%y-%m-%dT%H-%M-%SZ')
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "gh-actions@4lch4.email"
+
+          git add ./manifest.json
+          git commit -m "chore: update manifest.json -- ${TIMESTAMP}"
+          git push origin main
