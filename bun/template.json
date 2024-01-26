@@ -1,5 +1,5 @@
 {
-  "id": "/bun",
+  "id": "bun",
   "name": "Bun",
   "description": "A new project that will use the Bun runtime."
 }
