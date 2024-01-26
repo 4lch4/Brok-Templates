@@ -1,0 +1,25 @@
+name: Build the Template Manifest
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build the Template Manifest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Run Manifest Script
+        run: bun run ../../build/manifest.ts
